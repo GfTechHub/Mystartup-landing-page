@@ -319,3 +319,20 @@
   from { transform: translateY(40px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+
+
+/* GLOBAL GRADIENT HEADING */
+.gradient-title {
+  background: linear-gradient(to right, #ffffff, #dbeafe, #f0abfc, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleGlow 6s ease-in-out infinite;
+}
+
+/* GLOW ANIMATION */
+@keyframes titleGlow {
+  0% { filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.2)); }
+  50% { filter: drop-shadow(0px 0px 12px rgba(255,255,255,0.6)); }
+  100% { filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.2)); }
+}
