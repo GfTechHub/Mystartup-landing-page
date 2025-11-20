@@ -1,29 +1,78 @@
-/* HERO BACKGROUND */
+/* NEW COLORFUL HERO */
 .hero {
   min-height: 100vh;
-  padding-top: 120px;
-  background: linear-gradient(to bottom right, #eef2ff, #ffffff);
   position: relative;
+  padding: 0 20px;
+  background: radial-gradient(circle at top left, #6a11cb, #2575fc);
+  background-size: cover;
+  color: white;
   overflow: hidden;
 }
 
-/* FLOATING SHAPES */
-.floating-shape {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  position: absolute;
-  background: rgba(0, 123, 255, 0.1);
-  animation: float 6s infinite ease-in-out;
+/* Center text content */
+.hero-content {
+  max-width: 800px;
 }
 
-.shape1 { top: 20%; left: 10%; animation-delay: 0s; }
-.shape2 { top: 60%; left: 70%; animation-delay: 2s; }
-.shape3 { top: 40%; left: 50%; animation-delay: 1s; }
+/* Improved title */
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
 
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Colorful blurred glowing circles */
+.glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: float 10s infinite ease-in-out;
+}
+
+.glow-1 {
+  background: #ff6ec7;
+  top: 10%;
+  left: 15%;
+}
+
+.glow-2 {
+  background: #42a5f5;
+  top: 60%;
+  left: 65%;
+  animation-delay: 2s;
+}
+
+.glow-3 {
+  background: #7c4dff;
+  top: 30%;
+  left: 40%;
+  animation-delay: 4s;
+}
+
+/* Button hover animation */
+.animated-btn {
+  transition: 0.3s ease;
+  transform: translateY(0);
+}
+.animated-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+
+/* FLOAT ANIMATION */
 @keyframes float {
   0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  50% { transform: translateY(-25px); }
 }
 
 /* BUTTON ANIMATION */
