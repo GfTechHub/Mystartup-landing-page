@@ -460,3 +460,54 @@
   50% { transform: translateY(-30px) translateX(20px) rotate(45deg); }
   100% { transform: translateY(0) translateX(0) rotate(0deg); }
 }
+
+
+
+
+
+/* Responsive Typography */
+h1.hero-title {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  h1.hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1.hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Ensure cards stack nicely on mobile */
+@media (max-width: 767px) {
+  .pricing .col-md-4,
+  .features .col-md-4,
+  .stats-section .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Adjust hero padding for mobile */
+@media (max-width: 576px) {
+  .hero {
+    padding: 100px 20px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+/* CTA Form stacking on mobile */
+@media (max-width: 575px) {
+  .cta-section form {
+    flex-direction: column;
+  }
+  .cta-section .form-control,
+  .cta-section .btn {
+    width: 100%;
+  }
+}
