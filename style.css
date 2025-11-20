@@ -128,3 +128,75 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+/* Default styling */
+.price-card {
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Highlight the middle card */
+.highlight-card {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card 1 - Slide from Right */
+.price-right {
+  animation: slideFromRight 0.9s ease-out forwards;
+}
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Card 2 - Slide from Left */
+.price-left {
+  animation: slideFromLeft 0.9s ease-out forwards;
+}
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Card 3 - Slide Up From Bottom */
+.price-bottom {
+  animation: slideFromBottom 0.9s ease-out forwards;
+}
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
