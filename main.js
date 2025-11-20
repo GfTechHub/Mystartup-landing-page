@@ -24,3 +24,33 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+
+
+// Stats Counter Animation
+const counters = document.querySelectorAll('.stat');
+const speed = 200; // lower = faster
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = Math.ceil(target / speed);
+    
+    if (count < target) {
+      counter.innerText = count + increment;
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target.toLocaleString();
+    }
+  };
+  
+  // Trigger only when visible
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      updateCount();
+      observer.disconnect();
+    }
+  }, { threshold: 0.6 });
+  
+  observer.observe(counter);
+});

@@ -402,3 +402,15 @@
   z-index: -1;
   animation: gradientShift 10s ease infinite;
 }
+
+
+.stats-section {
+  background: rgba(255,255,255,0.05); /* subtle glassy feel */
+  backdrop-filter: blur(5px);
+  padding: 60px 0;
+}
+
+.stats-section .stat {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
