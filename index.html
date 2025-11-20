@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Landing Page</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyStartup</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-2"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item px-2"><a class="btn btn-primary" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Build Faster With Modern UI</h1>
+      <p class="lead text-muted mt-3">
+        A startup-style landing page template built with HTML, CSS, JS, and Bootstrap 5.
+      </p>
+      <div class="mt-4">
+        <a href="#pricing" class="btn btn-primary btn-lg me-2">Get Started</a>
+        <a href="#features" class="btn btn-outline-secondary btn-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES (Dashboard Mockups) -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Dashboard Mockups</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Overview</h5>
+              <p class="card-text">Quick overview of analytics & stats.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Traffic</h5>
+              <p class="card-text">Traffic charts and real-time updates.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Engagement</h5>
+              <p class="card-text">User engagement and activity logs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Pricing</h2>
+
+      <div class="row g-4">
+        <!-- Starter -->
+        <div class="col-md-4">
+          <div class="card text-center h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Starter</h5>
+              <h2 class="fw-bold">$0</h2>
+              <p>Basic features</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro -->
+        <div class="col-md-4">
+          <div class="card text-center h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Pro</h5>
+              <h2 class="fw-bold">$19</h2>
+              <p>Advanced features</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="col-md-4">
+          <div class="card text-center h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Enterprise</h5>
+              <h2 class="fw-bold">$99</h2>
+              <p>All features</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">What People Say</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="p-4 border rounded shadow-sm">
+            <p class="fst-italic">"Very clean and modern UI. Loved it!"</p>
+            <h6 class="fw-bold mt-2">— Ada Lovelace</h6>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 border rounded shadow-sm">
+            <p class="fst-italic">"Easy to customize and deploy."</p>
+            <h6 class="fw-bold mt-2">— Grace Hopper</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 MyStartup. Built with Bootstrap 5.
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
