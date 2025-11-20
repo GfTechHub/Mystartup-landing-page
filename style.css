@@ -1,7 +1,81 @@
+/* HERO BACKGROUND */
 .hero {
-  background: linear-gradient(to bottom right, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  padding-top: 120px;
+  background: linear-gradient(to bottom right, #eef2ff, #ffffff);
+  position: relative;
+  overflow: hidden;
 }
-.card:hover {
+
+/* FLOATING SHAPES */
+.floating-shape {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  background: rgba(0, 123, 255, 0.1);
+  animation: float 6s infinite ease-in-out;
+}
+
+.shape1 { top: 20%; left: 10%; animation-delay: 0s; }
+.shape2 { top: 60%; left: 70%; animation-delay: 2s; }
+.shape3 { top: 40%; left: 50%; animation-delay: 1s; }
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* BUTTON ANIMATION */
+.animated-btn {
+  transition: 0.3s ease;
+  transform: translateY(0);
+}
+.animated-btn:hover {
   transform: translateY(-5px);
-  transition: 0.2s;
+}
+
+/* CARD HOVER */
+.hover-card {
+  transition: 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FEATURED PLAN */
+.featured {
+  border: 2px solid #007bff;
+  transform: scale(1.02);
+}
+
+/* NAVBAR ANIMATION */
+.animate-nav {
+  transition: 0.3s ease-in-out;
+}
+.nav-scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* SECTION REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease-out;
+}
+.reveal-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
