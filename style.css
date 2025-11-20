@@ -271,3 +271,51 @@
   50% { transform: translate(25px, 25px); }
   100% { transform: translate(0, 0); }
 }
+
+
+
+/* FULL SCREEN HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #9333ea, #ec4899);
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+/* ANIMATED GRADIENT BACKGROUND */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* LIQUID GLASS HERO BOX */
+.glass-hero-box {
+  max-width: 650px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  animation: fadeUp 1.3s ease;
+}
+
+/* HERO TITLE GRADIENT */
+.hero-title {
+  font-size: 3rem;
+  background: linear-gradient(to right, #fff, #dbeafe, #f0abfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* HERO FADE-UP ANIMATION */
+@keyframes fadeUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
